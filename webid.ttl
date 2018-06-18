@@ -1,0 +1,18 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cert: <http://www.w3.org/ns/auth/cert#> .
+@prefix rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<> a foaf:PersonalProfileDocument ;
+   foaf:maker <#this> ;
+   foaf:primaryTopic <#this> .
+
+<#this> a foaf:Person ;
+   foaf:name "Markus Freudenberg";
+   cert:key [ 
+       a cert:RSAPublicKey;
+       rdfs:label "Chile";
+       cert:exponent "65537"^^xsd:integer;
+       cert:modulus "aad6b75f370d7e89f938ff5b5fbc8adffc0b55b1f5d39236eb9f751f9cb3abc21dc99e2780b144ed2157bef356e221fedfdd58a0d0016c5788317abc56c353abd823c7adcec1e58b80b2826555e25d3f6b02da90bc762edf166207a5b1a877bd2133370f420f1fed593f13b0d0d8792a9d2c87adb0ddeb33edcda247a7766745c538ce09eb1f7c010f2db1796090535c5e1e998e576fd4a3f277b2d16784f688310ed960aa0f7d5dadd1c0b4fe09fda35a65ee5a435c11e3109ff470d5d680c7d8a7d89b9db25c7b13d8b2cb969d37c031eda8b05b79eecbee91e801b3eeaa2b786c1d52a21911485bf0d495980ac35154d822f8b1d29f66a431101e6178aa69"^^xsd:hexBinary ;
+      ] . 
+
