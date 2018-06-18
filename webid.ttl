@@ -9,6 +9,7 @@
 
 <#this> a foaf:Person ;
    foaf:name "Markus Freudenberg";
+   foaf:img <https://avatars1.githubusercontent.com/u/3686379?s=400&u=bace4ef9a034e75dd46075c334e4a597c4e64110&v=4>;	
    cert:key [ 
        a cert:RSAPublicKey;
        rdfs:label "Chile";
